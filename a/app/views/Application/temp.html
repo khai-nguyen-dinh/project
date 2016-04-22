@@ -1,0 +1,12 @@
+#{if flash.success}
+<p class="success" >${flash.success}</p>
+#{/if}
+
+#{if flash.error}
+<p class="error" >${flash.error}</p>
+#{/if}
+
+<form action="@{Application.Comment()}" method="post" name="Comment">
+    <input type="submit" name="Comment" value="Comment" />
+</form>
+

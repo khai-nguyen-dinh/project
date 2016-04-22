@@ -1,0 +1,70 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="@{'/public/css/bootstrap.min.css'}">
+    <link rel="stylesheet" href="@{'/public/css/flat-ui.min.css'}">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="@{'/public/css/style.css'}">
+    <title>Login</title>
+</head>
+<body>
+<div class="container-fluid">
+    <h1 class="text-center" id="site-header">Note for work</h1>
+    <form action="@{Application.signed()}" method="post" name="dangki">
+    <div id="login">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div id="login-form" >
+                    <div class="form-group">
+                        <input type="text" name="username" value="" placeholder="Email/Username" class="form-control" id="name" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div id="login-form" >
+                    <div class="form-group">
+                        <input type="password" name="password" value=""  placeholder="Password" class="form-control" id="password" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div id="seperator"></div>
+            </div>
+        </div>
+        <div class="row" id="action">
+            <div class="col-md-3 col-md-offset-3">
+                *{<a href="#fakelink" class="btn btn-block btn-lg" id="login-btn">Login</a>}*
+                <input type="submit" class="btn btn-block btn-lg" id="login-btn" name="submit" value="Sigin" /></br>
+            </div>
+            <div class="col-md-3">
+                <a href="@{Application.dk()}" class="btn btn-block btn-lg btn-primary">Register</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3" id="social">
+                <h2>Or login using:</h2>
+                <a class="fa fa-facebook fa-2x" id="first"></a>
+                <a class="fa fa-twitter fa-2x"></a>
+                <a class="fa fa-google-plus fa-2x"></a>
+            </div>
+        </div>
+    </div>
+    </form>
+        <!-- END LOGIN -->
+</div>
+<footer>
+    <p class="text-center">Design by &copy; Nguyen Dinh Khai, 2015</p>
+</footer>
+</body>
+</html>
+
+

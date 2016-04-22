@@ -1,0 +1,64 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> Note for you </title>
+    <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="@{'/public/css/m.css'}" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+<select runat="server" id="select">
+    <option value="A" style="background-color: white;">White</option>
+    <option value="B" style="background-color: red;">Red</option>
+    <option value="C" style="background-color: yellow;">Yellow</option>
+    <option value="D" style="background-color: green;">Green</option>
+</select>
+<script>
+    $('#select').change(function(){
+        if($(this).val() == 'A'){
+            $("body").css('background-color', 'white');
+        }
+        if($(this).val() == 'B'){
+            $("body").css('background-color', 'red');
+        }
+        if($(this).val() == 'C'){
+            $("body").css('background-color', 'yellow');
+        }
+        if($(this).val() == 'D'){
+            $("body").css('background-color', 'green');
+        }
+    });
+</script>
+<div id="headers">
+    <form action="" method="get" name="Log out">
+        <b><INPUT TYPE="button" id="index" value="Home" onClick="parent.location='@{Application.index()}'"></b>
+        <b> <INPUT TYPE="button" id="indexs"value="Log out"  onClick="parent.location='@{Application.logOut()}'"></b>
+        <b> <INPUT TYPE="button" id="indexs"value="chatroom"  onClick="parent.location='@{Application.chatroom()}'"></b>
+    </form>
+</div>
+<div id="header">
+    <form action="@{Application.postComment()}" method="post" name="content" autofocus>
+        <input class="add-input" id="form" placeholder="I need to..." type="text"  name="content"/>
+        <input class="add-btn" id="btn" type="submit" name="submit" value="ADD NOTE" />
+    </form>
+</div>
+
+<h1><center><strong style="color: #00619a"> You've got <u style="color: #5bc0de">${size}</u> to do</strong></center></h1>
+#{list items:post, as:'post'}
+
+<ul>
+
+    <li>
+        <a href="@{Application.menu(post)}" class="about">
+            <h4> ${post.content} </h4>
+            <h5>${post.postedAt}</h5>
+        </a>
+    </li>
+
+</ul>
+
+#{/list}
+</body>
+
+</html>

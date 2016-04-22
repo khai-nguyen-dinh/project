@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="@{'/public/css/bootstrap.min.css'}">
+        <link rel="stylesheet" href="@{'/public/css/flat-ui.min.css'}">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="@{'/public/css/style.css'}">
+        <title>SignUp</title>
+    </head>
+    <body>
+    <div class="container-fluid">
+        <h1 class="text-center" id="site-header">SignUp For Free</h1>
+        <form action="@{Application.signUp()}" method="get" name="dangki">
+            <div id="login">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div id="login-form" >
+                            <div class="form-group">
+                                <input type="text" name="username" value="" placeholder="Email/Username" class="form-control" id="name" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div id="login-form" >
+                            <div class="form-group">
+                                <input type="password" name="password" value=""  placeholder="Password" class="form-control" id="password" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div id="login-form" >
+                            <div class="form-group">
+                                <input type="text" name="fullname" value=""  placeholder="FullName" class="form-control" id="password"/>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div id="login-form" >
+                            <div class="form-group">
+                                <input type="text" name="address" value=""  placeholder="Address" class="form-control" id="password" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="action">
+                    <div class="col-md-3 col-md-offset-3">
+                        <input type="submit" class="btn btn-block btn-lg" id="login-btn" name="submit" value="SignUp" /></br>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="@{Application.signIn()}" class="btn btn-block btn-lg btn-primary">SignIn</a>
+                    </div>
+                </div>
+
+        <!-- END LOGIN -->
+
+    </div>
+        </form>
+     </div>
+    <footer>
+        <p class="text-center">	Design by &copy; Nguyen Dinh Khai, 2015</p>
+    </footer>
+    </body>
+    </html>

@@ -1,0 +1,118 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*****END RESET HERE*****/
+body {
+	/*background-color: #3A3C3F;*/
+	background-image: url("/public/images/yt4dkzzovgr947.jpg");
+}
+#site-header {
+	font-family: 'Roboto';
+	font-weight: 100;
+	color: white;
+	font-size: 4em;
+	margin-top: 30px;
+	margin-bottom: 90px;
+}
+#name,#password {
+	border: 1px solid #3A3C3F;
+	background-color: #353538;
+	color: white;
+	height: 60px;
+	-webkit-box-shadow: inset 5px 7px 10px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 5px 7px 10px -6px rgba(0,0,0,0.75);
+	box-shadow: inset 5px 7px 10px -6px rgba(0,0,0,0.75);
+}
+#name:focus,#password:focus {
+	border: 2px solid #1ABC9C;
+}
+#seperator {
+	border-bottom: 3px dashed #5E5F62;
+}
+#action {
+	margin-top: 20px;
+}
+#action a {
+	font-family: 'Roboto';
+}
+#action #login-btn {
+	border: 2px solid #1ABC9C;
+} 
+#social {
+	margin-top: 60px;
+	
+}
+#social h2 {
+	font-family: 'Roboto';
+	font-weight: 100;
+	font-size: 1.2em;
+	color: white;
+	margin-bottom: 20px;
+	display: inline;
+	margin-left: 110px;
+}
+#social a {
+	color:#1ABC9C;
+	margin-right: 50px;
+	transition: all ease 0.2s;
+}
+#social a:hover {
+		color: #48C9B0;
+}
+#first {
+	margin-left: 50px;
+}
+footer {
+	background-color: #4D70DB;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+/*footer p {
+	display: inline;
+}*/

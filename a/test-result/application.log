@@ -1,0 +1,5 @@
+25 thg 9 2015 16:06:57,584 INFO  ~ Starting C:\Users\khain\Desktop\web\a
+25 thg 9 2015 16:07:00,368 WARN  ~ You're running Play! in DEV mode
+25 thg 9 2015 16:07:00,745 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+25 thg 9 2015 16:07:10,342 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0 for default
+25 thg 9 2015 16:07:12,428 INFO  ~ Application 'a' is now started !

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+#{if flash.success}
+<p class="success" >${flash.success}</p>
+<head> <title>Đang Chuyển Trang...</title> <meta http-equiv="refresh" content="2;@{Application.Comment()}"> </head>
+#{/if}
+#{else flash.error}
+<p class="success" >${flash.error}</p>
+<head> <title>Đang Chuyển Trang...</title> <meta http-equiv="refresh" content="2;@{Application.share(post)}"> </head>
+#{/else}
+
+</body>
+</html>

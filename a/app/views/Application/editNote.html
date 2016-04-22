@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Edit Note</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+    <link rel="stylesheet" href="@{'/public/css/styless.css'}">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="login">
+
+    <h2 class="text-center"><span class="fontawesome-lock"></span>Edit Note</h2>
+
+    <form action="@{Application.edited(post)}" method="POST">
+
+        <fieldset>
+            <textarea name="content" rows="5" cols="34">${post.content}</textarea><br>
+
+            <p class="text-center"><input type="submit" value="Edit" class="btn btn-success" id="submit"></p>
+
+        </fieldset>
+
+    </form>
+
+</div> <!-- end login -->
+
+</body>
+</html>

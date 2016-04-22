@@ -1,0 +1,166 @@
+/* This tutorial is provided in part by Server Intellect Web Hosting Solutions (www.serverintellect.com. Visit www.cssatoms.com for more CSS Tutorials. */
+* {
+	margin: 0px;
+	padding: 0px;	
+}
+ 
+body {
+	margin:0px;
+	padding:0px;
+	width:100%;
+	background-image:url(../img/26465-NW6IU6.jpg);
+	background-repeat:no-repeat;
+}
+.wrapper {
+	width:1100px;
+	padding:0px;
+	margin:0px auto;
+	height:1000px;	
+	background-color:#FFF;
+	
+	
+}
+.header {
+	width:1000px;
+	padding:0px;
+	
+	margin:0px auto;
+	
+}
+.post {
+	background:#00);
+	width:900px;
+	margin:0px auto;
+	padding-top:50px;	
+	
+}
+.content {
+	
+	width:900px;
+	margin:0px auto;
+	padding-top:50px;	
+	
+}
+.content h2 {
+	font-weight: bolder;
+}
+
+.content ul {
+	overflow: none;
+	position: relative;
+	top: 60px;
+	left: 60px; 	
+	width: 50em;
+}
+
+.content ul li {
+	list-style: none;
+	float: right;
+	margin: 15px;
+}
+
+.content ul li p {
+	font-family:'Reenie Beanie', serif;
+	font-size: 180%;
+}
+
+.content ul li a {
+	background-color: #ccf;
+	color: black;
+	display: block;
+	height: 10em;
+	padding: 2em;
+	text-decoration: none;	
+	width: 10em; 
+	-moz-box-shadow: 5px 5px 5px #191919;
+	-webkit-box-shadow: 5px 5px 5px #191919;
+	box-shadow: 5px 5px 5px #191919;
+	-moz-transform: rotate(6deg);
+	-webkit-transform: rotate(6deg);
+	-o-transform: rotate(6deg);	
+	-moz-transition: -moz-transform .15s linear;  
+  	-o-transition: -o-transform .15s linear;  
+  	-webkit-transition: -webkit-transform .15s linear;	
+}
+
+.content ul li:nth-child(even) a{
+	-moz-transform: rotate(4deg);
+	-webkit-transform: rotate(4deg);
+	-o-transform: rotate(4deg);
+	position: relative;
+	top: 5px;	 
+}
+.content.ul li:nth-child(3n) a{
+	-moz-transform: rotate(-3deg);
+	-webkit-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	position: relative;
+	top: -5px;	 
+}
+.content ul li:nth-child(5n) a{
+	-moz-transform:rotate(5deg);
+	-webkit-transform:rotate(5deg);
+	-o-transform:rotate(5deg);
+	position: relative;
+	top: -10px;	 
+}
+
+.content ul li a:hover, ul li a:focus{
+	background-color:  #fcffa3;
+	-moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);  
+  	-webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);  
+ 	 box-shadow:10px 10px 7px rgba(0,0,0,.7);  
+	-webkit-transform: scale(1.25);  
+	-moz-transform: scale(1.25);  
+	-o-transform: scale(1.25);  
+	position: relative;  
+	z-index: 5;  
+}
+.pin {
+
+  background-color: #aaa;
+  display: block;
+  height: 32px;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  top: -16px;
+  z-index: 1;
+}
+.pin:after {
+  background-color: #A31;
+  background-image: radial-gradient(25% 25%, circle, hsla(0,0%,100%,.3), hsla(0,0%,0%,.3));
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.1),
+              inset 3px 3px 3px hsla(0,0%,100%,.2),
+              inset -3px -3px 3px hsla(0,0%,0%,.2),
+              23px 20px 3px hsla(0,0%,0%,.15);
+  content: '';
+  height: 12px;
+  left: -5px;
+  position: absolute;
+  top: -10px;
+  width: 12px;
+}
+.pin:before {
+  background-color: hsla(0,0%,0%,0.1);
+  box-shadow: 0 0 .25em hsla(0,0%,0%,.1);
+  content: '';
+  height: 24px;
+  width: 2px;
+  left: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(57.5deg);
+  -moz-transform: rotate(57.5deg);
+  -webkit-transform: rotate(57.5deg);
+  -o-transform: rotate(57.5deg);
+  -ms-transform: rotate(57.5deg);
+  transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+}
+
+

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+    <link rel="stylesheet" href="@{'/public/css/styless.css'}">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="login">
+
+    <h2 class="text-center"><span class="fontawesome-lock"></span>MENU</h2>
+    <fieldset>
+    <form action="@{Application.editNote(post)}" method="POST">
+
+
+
+        <p class="text-center"><input type="submit" value="Edit" class="btn btn-success" id="submit"></p>
+
+
+
+
+    </form>
+    <form action="@{Application.deleteNote(post)}" method="POST">
+
+        <p class="text-center"><input type="submit" value="Delete" class="btn btn-success" id="submit"></p>
+
+    </form>
+        <form action="@{Application.share(post)}" method="POST">
+
+            <p class="text-center"><input type="submit" value="Share your friend" class="btn btn-success" id="submit"></p>
+
+        </form>
+    </fieldset>
+</div> <!-- end login -->
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+#{if flash.success}
+<p class="success" >${flash.success}</p>
+#{/if}
+
+<form action="@{Application.signIn()}" method="post" name="signIn">
+    <input type="submit" name="submit" value="SignIn" />
+</form>

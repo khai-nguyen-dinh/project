@@ -1,0 +1,137 @@
+/* This tutorial is provided in part by Server Intellect Web Hosting Solutions (www.serverintellect.com. Visit www.cssatoms.com for more CSS Tutorials. */
+* {
+	margin: 0px;
+	padding: 0px;	
+}
+ 
+body {
+
+	/*background-image: url("/public/images/backgrounds.jpg");*/
+	background-color: #95d788;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h2 {
+	font-weight: bolder;
+}
+
+ul {
+	position: relative;
+	top: 60px;
+	left:50px;
+	width: 70em;
+}
+
+ul li {
+	list-style: none;
+	float: right;
+	margin: 15px;
+}
+
+ul li h4 {
+
+	word-wrap: break-word;
+
+
+}
+
+ul li a {
+	background-color: #fcffa3;
+	color: black;
+	display: block;
+	height: 15em;
+	padding: 2em;
+	text-decoration: none;	
+	width: 10em;
+	-moz-box-shadow: 5px 5px 5px #191919;
+	-webkit-box-shadow: 5px 5px 5px #191919;
+	box-shadow: 5px 5px 5px #191919;
+	-moz-transform: rotate(6deg);
+	-webkit-transform: rotate(6deg);
+	-o-transform: rotate(6deg);	
+	-moz-transition: -moz-transform .15s linear;  
+  	-o-transition: -o-transform .15s linear;  
+  	-webkit-transition: -webkit-transform .15s linear;	
+}
+
+ul li:nth-child(even) a{
+	-moz-transform: rotate(4deg);
+	-webkit-transform: rotate(4deg);
+	-o-transform: rotate(4deg);
+	position: relative;
+	top: 5px;
+}
+#header{
+	width: auto;
+	height: 70px;
+	/*background-image: url("/public/images/07012010GreenLeavesonWhiteBackgr-1.jpg");*/
+	background-color:#f4d313;
+}
+
+#form{
+	/*background-image: url("/public/images/background.png");*/
+	background-color:#bac1c8;
+	width: 400px;
+	height: 70px;
+	margin-left: 400px;
+}
+#btn{
+	background-image: url("/public/images/images.jpg");
+	width: 100px;
+	height: 70px;
+	text-emphasis-style: circle;
+}
+#headers {
+	width: auto;
+	height: 30px;
+	background-color: #117a65;
+}
+#forms{
+	width: 60px;
+	height: 30px;
+	margin-right: auto;
+	background-image: url("/public/images/s.jpg");
+}
+
+#index{
+	width: 60px;
+	height: 30px;
+	background-color: orange;
+
+}
+#indexs{
+	width: 60px;
+	height: 30px;
+	background-color: orange;
+
+}
+
+
+ul li:nth-child(3n) a{
+	-moz-transform: rotate(-3deg);
+	-webkit-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	position: relative;
+	top: -5px;	 
+}
+ul li:nth-child(5n) a{
+	-moz-transform:rotate(5deg);
+	-webkit-transform:rotate(5deg);
+	-o-transform:rotate(5deg);
+	position: relative;
+	top: -10px;	 
+}
+
+ul li a:hover, ul li a:focus{
+	background-color: #6CF;
+	-moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);  
+  	-webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);  
+ 	 box-shadow:10px 10px 7px rgba(0,0,0,.7);  
+	-webkit-transform: scale(1.25);  
+	-moz-transform: scale(1.25);  
+	-o-transform: scale(1.25);  
+	position: relative;  
+	z-index: 5;  
+}
+
